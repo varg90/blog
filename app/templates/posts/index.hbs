@@ -2,6 +2,8 @@
 <h1>Posts</h1>
 
 {{#each model as |post|}}
-  <h2>{{post.title}}</h2>
-  <p>{{post.body}}</p>
+  {{#link-to "posts.show" post}}
+    <h2>{{post.title}}</h2>
+    <p>{{post.body}}</p>
+  {{/link-to}}
 {{/each}}
