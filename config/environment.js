@@ -21,7 +21,10 @@ module.exports = function(environment) {
   };
 
   ENV.contentSecurityPolicy = {
-    'connect-src': "'self' http://localhost:3000"
+    'connect-src': "'self' http://localhost:3000",
+    'script-src': "'self' maxcdn.bootstrapcdn.com",
+    'style-src': "'self' maxcdn.bootstrapcdn.com",
+    'font-src': "'self' maxcdn.bootstrapcdn.com"
   };
 
   if (environment === 'development') {

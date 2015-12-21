@@ -2,8 +2,14 @@
 <h1>Posts</h1>
 
 {{#each model as |post|}}
-  {{#link-to "posts.show" post}}
-    <h2>{{post.title}}</h2>
-    <p>{{post.body}}</p>
-  {{/link-to}}
+  <div class="panel panel-success">
+    <div class="panel-heading">
+      {{#link-to "posts.show" post}}
+        <h3 class="panel-title">{{post.title}}</h3>
+      {{/link-to}}
+    </div>
+    <div class="panel-body">
+      {{truncate post.body 100}}
+    </div>
+  </div>
 {{/each}}
