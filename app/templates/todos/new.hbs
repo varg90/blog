@@ -1,14 +1,14 @@
 {{outlet}}
 
-<h2>Create Post</h2>
+<h2>Create Todo</h2>
 <form class="form form-horizontal" {{action "save" on="submit"}}>
   <div class="form-group">
     <label for="{{label}}">Title</label>
     {{input class="form-control" type="text" value=title size="50"}}
   </div>
   <div class="form-group">
-    <label for="{{body}}">Body</label>
-    {{textarea class="form-control" value=body cols="80" rows="6"}}
+    <label for="{{completed}}">Competed</label>
+    {{checkbox class="form-control" value=completed}}
   </div>
   <div class="col-md-6">
     <button class="btn btn-primary btn-block" type="submit">Save</button>

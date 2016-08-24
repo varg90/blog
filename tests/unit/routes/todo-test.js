@@ -1,6 +1,6 @@
 import { moduleFor, test } from 'ember-qunit';
 
-moduleFor('route:posts/index', 'Unit | Route | posts/index', {
+moduleFor('route:todo', 'Unit | Route | todo', {
   // Specify the other units that are required for this test.
   // needs: ['controller:foo']
 });

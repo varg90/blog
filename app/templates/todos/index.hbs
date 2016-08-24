@@ -1,0 +1,13 @@
+{{outlet}}
+<h1>Todos</h1>
+
+{{#each model as |todo|}}
+  <div class="panel panel-success">
+    <div class="panel-heading">
+      {{#link-to "todos.show" todo}}
+        <h3 class="panel-title">{{todo.title}}</h3>
+      {{/link-to}}
+      {{todo.completed}}
+    </div>
+  </div>
+{{/each}}
